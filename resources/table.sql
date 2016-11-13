@@ -3,6 +3,7 @@ CREATE DATABASE ranceworks;
 USE ranceworks;
 
 CREATE TABLE access_log(
+  id INT AUTO_INCREMENT,
   date_gmt DATE,
   time_gmt TIME,
   city VARCHAR(64),
@@ -12,5 +13,5 @@ CREATE TABLE access_log(
   remote_addr VARCHAR(39),
   http_referer varchar(512),
   http_user_agent VARCHAR(255),
-  store_time TIMESTAMP
-);
+  store_time TIMESTAMP,
+  PRIMARY KEY (id)) ;
